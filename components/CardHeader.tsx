@@ -1,7 +1,3 @@
-import Image from "next/image";
-import Speaker from "/public/speaker.svg";
-const siteLogo = process.env.NEXT_PUBLIC_LOGO || Speaker;
-
 const CardHeader = ({
   title,
   subtitle,
@@ -12,14 +8,14 @@ const CardHeader = ({
   return (
     <div>
       <div className="w-20 md:w-28 h-20 md:h-28 relative mx-auto">
-        <Image src={siteLogo} alt="speaker" fill />
+      <img className="" src="/logo.jpeg" alt="speaker"/>
       </div>
       <div className="text-center mb-4 lg:mb-6 space-y-4 lg:space-y-6">
-        <h1 className="text-4xl md:text-[55px] font-semibold leading-none md:leading-tight text-[#482307]">
+        <h1 className="text-4xl md:text-[45px] font-semibold leading-none md:leading-tight text-[#000000]">
           {title}
         </h1>
-        <p className="text-lg md:text-[26px] font-normal text-[#A1724E]/60">
-          {subtitle}
+        <p className="text-lg md:text-[26px] font-normal text-[#175279]/90">
+          Join the waitlist to get Gramo!
         </p>
       </div>
     </div>
